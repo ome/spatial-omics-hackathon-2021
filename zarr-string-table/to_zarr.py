@@ -1,5 +1,6 @@
 import random
 import string
+import lorem
 
 import pandas as pd
 
@@ -32,11 +33,25 @@ def fixed_length_random():
     f.create_dataset("fixed-length-random", data=col, chunks=(512,), compressor=GZip())
 
 
+def fixed_length_hallo():
+
+    col = np.array(
+        [f"hallo-{i}" for i in range(8)]
+    )
+    print(col)
+
+    f = zarr.open("table.zarr")
+    f.create_dataset("fixed-length-hallo", data=col, chunks=(4,), compressor=GZip())
+
+
 def float_reference():
     data = np.random.rand(2048).astype("float32")
     f = zarr.open("table.zarr")
     f.create_dataset("float", data=data, chunks=(512,), compressor=GZip())
 
 
+
 # float_reference()
-fixed_length_random()
+# fixed_length_random()
+# fixed_length_lorem()
+fixed_length_hallo()
