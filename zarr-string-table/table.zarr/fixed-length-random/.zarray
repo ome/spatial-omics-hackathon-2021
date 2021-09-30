@@ -1,0 +1,17 @@
+{
+    "chunks": [
+        512
+    ],
+    "compressor": {
+        "id": "gzip",
+        "level": 1
+    },
+    "dtype": "<U9",
+    "fill_value": "",
+    "filters": null,
+    "order": "C",
+    "shape": [
+        2048
+    ],
+    "zarr_format": 2
+}
