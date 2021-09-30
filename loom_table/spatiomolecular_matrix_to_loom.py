@@ -23,10 +23,10 @@ ion_intensity_cols = [
 csv_to_loom(
     csv_path="../spatiomolecular_matrix.csv",
     dense_columns=point_cols,
-    out_path="spatiomolecular_matrix.loom",
+    out_path="spatiomolecular_matrix.zarr.loom",
 )
 
-with loompy.connect("spatiomolecular_matrix.loom") as ds:
+with loompy.connect("spatiomolecular_matrix.zarr.loom") as ds:
     ds.row_attrs["area"]  # int64 column
     # Use scan to iterate over views of "chunks"
     # or create a view of the whole dataset:
