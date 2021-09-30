@@ -16,11 +16,11 @@ def is_ion_formula(string: str) -> bool:
 
 csv_path = Path("../spatiomolecular_matrix.csv")
 df = pd.read_csv(csv_path)
-point_cols = ["center_y", "center_x"]
+DENSE_COLUMNS = ["center_y", "center_x"]
 ion_intensity_cols = [c for c in df.columns if is_ion_formula(c)]
 
-points_np = df[point_cols].values
-non_points_df = df[[c for c in df.columns if c not in point_cols]]
+points_np = df[DENSE_COLUMNS].values
+non_points_df = df[[c for c in df.columns if c not in DENSE_COLUMNS]]
 
 # A pandas DataFrame holding row metadata
 row_metadata_df = non_points_df

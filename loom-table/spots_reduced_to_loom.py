@@ -6,13 +6,13 @@ import pandas as pd
 
 csv_path = Path("../spots_reduced.csv")
 df = pd.read_csv(csv_path)
-point_cols = ["z", "y", "x"]
+DENSE_COLUMNS = ["zc", "yc", "xc"]
 
-points_np = df[point_cols].values
-non_points_df = df[[c for c in df.columns if c not in point_cols]]
+points_np = df[DENSE_COLUMNS].values
+obs = df.drop(DENSE_COLUMNS, axis="columns")
 
 # A pandas DataFrame holding row metadata
-row_metadata_df = non_points_df
+row_metadata_df = obs
 # A pandas DataFrame holding column metadata
 # col_metadata_df = ...
 # A numpy ndarray holding the main dataset
