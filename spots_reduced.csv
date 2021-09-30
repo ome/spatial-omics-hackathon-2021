@@ -1,4 +1,4 @@
-,intensity,z,y,x,radius,spot_id,z_min,z_max,y_min,y_max,x_min,x_max,features,xc,yc,zc,target,distance,passes_thresholds
+ID,intensity,z,y,x,radius,spot_id,z_min,z_max,y_min,y_max,x_min,x_max,features,xc,yc,zc,target,distance,passes_thresholds
 0,0.000108445114165,0,2399,1591,4.0,0,0.0,1.0,2396.0,2400.0,1588.0,1595.0,0,1592.6631929970822,2401.0,5e-05,,0.411115055757366,False
 1,8.362327207578346e-06,0,2399,1182,3.0,1,0.0,1.0,2397.0,2400.0,1180.0,1185.0,1,1183.4927052938724,2401.0,5e-05,,0.3885798560709833,False
 2,1.562410034239292e-06,0,2399,752,3.0,2,0.0,1.0,2397.0,2400.0,750.0,755.0,2,753.3134639433097,2401.0,5e-05,,0.2702180392841246,False
