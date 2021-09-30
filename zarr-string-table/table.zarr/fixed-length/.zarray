@@ -3,11 +3,8 @@
         2048
     ],
     "compressor": {
-        "blocksize": 0,
-        "clevel": 5,
-        "cname": "lz4",
-        "id": "blosc",
-        "shuffle": 1
+        "id": "gzip",
+        "level": 1
     },
     "dtype": "<U8",
     "fill_value": "",
