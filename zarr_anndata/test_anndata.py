@@ -1,8 +1,9 @@
 from functools import partial
+import os
 
 import anndata
 
-from anndata_utils import setup_anndata, ann_to_zarr
+from zarr_anndata.anndata_utils import setup_anndata, ann_to_zarr
 
 
 def test_anndata_to_zarr(benchmark, tmp_path):
