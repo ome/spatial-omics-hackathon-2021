@@ -1,0 +1,21 @@
+{
+    "_index": "ID",
+    "column-order": [
+        "ID",
+        "intensity",
+        "radius",
+        "spot_id",
+        "z_min",
+        "z_max",
+        "y_min",
+        "y_max",
+        "x_min",
+        "x_max",
+        "features",
+        "target",
+        "distance",
+        "passes_thresholds"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.1.0"
+}
