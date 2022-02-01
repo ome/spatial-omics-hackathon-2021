@@ -9,7 +9,7 @@ from zarr_table.writer import DIMENSION_AXES, write_points_dataframe
 
 
 def test_spots_reduced():
-    df = pd.read_csv("../spots_reduced.csv")
+    df = pd.read_csv("data/spots_reduced.csv")
     index_column = "ID"
     df[index_column] = df[index_column].astype(str)
     df.set_index("ID", inplace=True)
@@ -48,7 +48,7 @@ def test_spots_reduced():
 
 
 def test_spatiomolecular_matrix():
-    df = pd.read_csv("../spatiomolecular_matrix.csv")
+    df = pd.read_csv("data/spatiomolecular_matrix.csv")
     index_column = "cell_id"
     df[index_column] = df[index_column].astype(str)
     df.set_index(index_column, inplace=True)

@@ -4,3 +4,4 @@ zarr
 pandas
 pytest
 pytest-benchmark
+s3fs
