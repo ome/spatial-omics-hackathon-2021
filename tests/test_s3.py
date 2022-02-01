@@ -2,6 +2,7 @@ import s3fs
 import os
 import pytest_benchmark
 import pandas as pd
+import pytest
 
 
 @pytest.fixture
